@@ -4,10 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>Foodie</title>
   </head>
   <body>
+    <header class="header">
+      <img src="img/omnifood-logo.png" class="logo" alt="Foodie Logo" />
+      <nav class="nav--bar">
+        <ul class="nav__bar--list">
+          <li><a href="#" class="nav__list--link">How it works</a></li>
+          <li><a href="#" class="nav__list--link">Meals</a></li>
+          <li><a href="#" class="nav__list--link">Testimonials</a></li>
+          <li><a href="#" class="nav__list--link">Pricing</a></li>
+          <hr />
+          <li>
+            <a href="#" class="nav__list--link nav--btn">Try for free</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <section class="section--hero">
       <div class="hero__grid--container">
         <div class="hero__text--box">
@@ -19,8 +35,23 @@
             healthy again. Tailored to your personal tastes and nutritional
             needs. We have delivered 250,000+ meals last year!
           </p>
-          <a href="#" class="btn btn--cta margin__right--sm">Subscribe Now</a>
+          <a href="#" class="btn btn--animated btn--cta margin__right--sm"
+            >Subscribe Now</a
+          >
           <a href="#" class="btn btn--outline">Explore more &darr;</a>
+          <div class="delivered-meals">
+            <div class="delivered--img">
+              <img src="img/customers/customer-1.jpg" alt="Customer photo1" />
+              <img src="img/customers/customer-2.jpg" alt="Customer photo2" />
+              <img src="img/customers/customer-3.jpg" alt="Customer photo3" />
+              <img src="img/customers/customer-4.jpg" alt="Customer photo4" />
+              <img src="img/customers/customer-5.jpg" alt="Customer photo5" />
+              <img src="img/customers/customer-6.jpg" alt="Customer photo6" />
+            </div>
+            <p class="delivered--text">
+              <span>250,000+</span> meals delivered last year!
+            </p>
+          </div>
         </div>
         <div class="hero__img--box">
           <img src="img/hero.png" class="hero--img" alt="" />
