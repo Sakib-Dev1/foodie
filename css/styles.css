@@ -46,8 +46,7 @@ body {
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
   text-decoration: none;
-  margin-right: 1rem;
-  animation: float 6s ease-in-out infinite;
+  animation: float 2s ease-in-out infinite;
 }
 .btn--cta:link,
 .btn--cta:visited {
@@ -57,29 +56,35 @@ body {
 .btn--cta:hover,
 .btn--cta:active {
   background-color: #cf711f;
+  animation: none;
 }
 .btn--outline:link,
 .btn--outline:visited {
   background-color: #fff;
-  color: #333;
+  color: #555;
 }
 .btn--outline:hover,
 .btn--outline:active {
   background-color: #fdf2e9;
-  color: #fff;
+  box-shadow: inset 0 0 0 3px #fff;
+  animation: none;
 }
 /* Animation */
 @keyframes float {
   0% {
-    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.6);
-    transform: translateY(0px);
+    box-shadow: 0px 5px 15px 0px #f5cba7;
+    transform: translate(0px);
   }
   50% {
-    box-shadow: 0px 25px 15px 0px rgba(0, 0, 0, 0.2);
-    transform: translateY(-20px);
+    box-shadow: 0px 25px 15px 0px #f5cba7;
+    transform: translate(-20px);
   }
   100% {
-    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.6);
-    transform: translateY(0px);
+    box-shadow: 0px 5px 15px 0px #f5cba7;
+    transform: translate(0px);
   }
+}
+/* Helper class */
+.margin__right--sm {
+  margin-right: 1rem;
 }
