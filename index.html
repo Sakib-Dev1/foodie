@@ -11,13 +11,22 @@
   </head>
   <body>
     <header class="header">
-      <img src="img/foodie.png" class="logo" alt="Foodie Logo" />
+      <img
+        src="img/foodie.png"
+        id="foodielogo"
+        class="logo"
+        alt="Foodie Logo"
+      />
       <nav class="nav--bar">
         <ul class="nav__bar--list">
-          <li><a href="#" class="nav__list--link">How it works</a></li>
-          <li><a href="#" class="nav__list--link">Meals</a></li>
-          <li><a href="#" class="nav__list--link">Testimonials</a></li>
-          <li><a href="#" class="nav__list--link">Pricing</a></li>
+          <li>
+            <a href="#howitworks" class="nav__list--link">How it works</a>
+          </li>
+          <li><a href="#meals" class="nav__list--link">Meals</a></li>
+          <li>
+            <a href="#testimonials" class="nav__list--link">Testimonials</a>
+          </li>
+          <li><a href="#pricing" class="nav__list--link">Pricing</a></li>
           <hr />
           <li>
             <a href="#" class="nav__list--link nav--btn">Try for free</a>
@@ -26,7 +35,7 @@
       </nav>
     </header>
     <main>
-      <section class="section--hero">
+      <section id="foodielogo" class="section--hero">
         <div class="hero__grid--container">
           <div class="hero__text--box">
             <h1 class="heading--primary">
@@ -72,7 +81,7 @@
           </div>
         </div>
       </section>
-      <section class="how__it--works">
+      <section id="howitworks" class="how__it--works">
         <div class="container">
           <span class="sub--heading">How it works</span>
           <h2 class="heading--secondary">
@@ -140,14 +149,14 @@
           </div>
         </div>
       </section>
-      <section class="section--meals">
+      <section id="meals" class="section--meals">
         <div class="container">
           <span class="sub--heading center"> meals</span>
           <h2 class="heading--secondary center">
             Omnifood AI chooses from 5,000+ recipes
           </h2>
         </div>
-        <div class="container grid grid-template-cols-3">
+        <div class="container grid grid-template-cols-3 margin__bottom--md">
           <div class="meal">
             <img
               src="img/meals/meal-1.jpg"
@@ -160,32 +169,184 @@
               </div>
               <p class="meal--title">Japanese Gyozas</p>
               <ul class="meal--attributes">
-                <li class="meal--attribute">650 calories</li>
-                <li class="meal--attribute">NutriScore &reg;</li>
-                <li class="meal--attribute">4.9 rating (537)</li>
+                <li class="meal--attribute">
+                  <ion-icon class="meal--icon" name="flame-outline"></ion-icon>
+                  <span> <strong> 650</strong> calories</span>
+                </li>
+                <li class="meal--attribute">
+                  <ion-icon
+                    class="meal--icon"
+                    name="restaurant-outline"
+                  ></ion-icon
+                  ><span>NutriScore &reg;</span>
+                </li>
+                <li class="meal--attribute">
+                  <ion-icon class="meal--icon" name="star-outline"></ion-icon
+                  ><span> <strong> 4.9</strong> rating (537)</span>
+                </li>
               </ul>
             </div>
           </div>
           <div class="meal">
             <img
-              src="img/meals/meal-2.jpg"
+              src="img/meals/meal-1.jpg"
               alt="Japanese Gyozas"
               class="meal--img"
             />
-            <div class="meal--tag">
-              <span class="tag tag--vegan"> Vegan</span>
-              <span class="tag tag--paleo">Paleo</span>
+            <div class="meal--content">
+              <div class="meal--tag">
+                <span class="tag tag--vegan">vegan</span>
+                <span class="tag tag--paleo">paleo</span>
+              </div>
+              <p class="meal--title">Avocado Salad</p>
+              <ul class="meal--attributes">
+                <li class="meal--attribute">
+                  <ion-icon class="meal--icon" name="flame-outline"></ion-icon>
+                  <span> <strong> 650</strong> calories</span>
+                </li>
+                <li class="meal--attribute">
+                  <ion-icon
+                    class="meal--icon"
+                    name="restaurant-outline"
+                  ></ion-icon
+                  ><span>NutriScore &reg;</span>
+                </li>
+                <li class="meal--attribute">
+                  <ion-icon class="meal--icon" name="star-outline"></ion-icon
+                  ><span> <strong> 4.9</strong> rating (537)</span>
+                </li>
+              </ul>
             </div>
-            <p class="meal--title">Avocado Salad</p>
-            <ul class="meal--attributes">
-              <li class="meal--attribute">650 calories</li>
-              <li class="meal--attribute">NutriScore &reg;</li>
-              <li class="meal--attribute">4.9 rating (537)</li>
+          </div>
+          <div class="diets">
+            <h2 class="heading--tertiary">Works with any diet</h2>
+            <ul class="diet--list">
+              <li class="list--item">
+                <ion-icon class="list--icon" name="checkmark-outline"></ion-icon
+                ><span>vegeterian</span>
+              </li>
+              <li class="list--item">
+                <ion-icon class="list--icon" name="checkmark-outline"></ion-icon
+                ><span>Vegan</span>
+              </li>
+              <li class="list--item">
+                <ion-icon class="list--icon" name="checkmark-outline"></ion-icon
+                ><span>Pescatarian</span>
+              </li>
+              <li class="list--item">
+                <ion-icon class="list--icon" name="checkmark-outline"></ion-icon
+                ><span>Gluten-free</span>
+              </li>
+              <li class="list--item">
+                <ion-icon class="list--icon" name="checkmark-outline"></ion-icon
+                ><span>Lactose-free</span>
+              </li>
+              <li class="list--item">
+                <ion-icon class="list--icon" name="checkmark-outline"></ion-icon
+                ><span>Keto</span>
+              </li>
+              <li class="list--item">
+                <ion-icon class="list--icon" name="checkmark-outline"></ion-icon
+                ><span>Paleo</span>
+              </li>
+              <li class="list--item">
+                <ion-icon class="list--icon" name="checkmark-outline"></ion-icon
+                ><span>Low FODMAP</span>
+              </li>
+              <li class="list--item">
+                <ion-icon class="list--icon" name="checkmark-outline"></ion-icon
+                ><span>Kid-friendly</span>
+              </li>
             </ul>
           </div>
-          <div>meal</div>
+        </div>
+        <div class="container all--recepies">
+          <a href="#foodielogo" class="link">See all recepies &rarr;</a>
+        </div>
+      </section>
+      <section class="section--pricings" id="pricing">
+        <div class="container">
+          <span class="sub--heading">pricing</span>
+          <h2 class="heading--secondary">
+            Eating well without breaking the bank
+          </h2>
+        </div>
+        <div class="container grid grid-template-cols-2 margin__bottom--md">
+          <div class="pricing__card--starter pricing--card">
+            <header class="plan__header">
+              <p class="plan--name">Starter</p>
+              <p class="plan--price">$399</p>
+              <p class="plan--text">per month. That's just $13 per meal!</p>
+            </header>
+            <ul class="list">
+              <li class="list--item">
+                <ion-icon class="list--icon" name="checkmark-outline"></ion-icon
+                ><span>1 meal per day</span>
+              </li>
+              <li class="list--item">
+                <ion-icon class="list--icon" name="checkmark-outline"></ion-icon
+                ><span>Order from 11am to 9pm</span>
+              </li>
+              <li class="list--item">
+                <ion-icon class="list--icon" name="checkmark-outline"></ion-icon
+                ><span>Delivery is free</span>
+              </li>
+              <li class="list--item">
+                <ion-icon class="list--icon" name="close-outline"></ion-icon>
+              </li>
+            </ul>
+            <div class="plan__sign--up">
+              <a
+                href="
+              "
+                class="btn btn--full"
+                >Buy starter Pack</a
+              >
+            </div>
+          </div>
+          <div class="pricing__card--complete pricing--card">
+            <header class="plan__header">
+              <p class="plan--name">Complete</p>
+              <p class="plan--price">$649</p>
+              <p class="plan--text">per month. That's just $11 per meal!</p>
+            </header>
+            <ul class="list">
+              <li class="list--item">
+                <ion-icon class="list--icon" name="checkmark-outline"></ion-icon
+                ><span>2 meals per day</span>
+              </li>
+              <li class="list--item">
+                <ion-icon class="list--icon" name="checkmark-outline"></ion-icon
+                ><span>Order 24/7</span>
+              </li>
+              <li class="list--item">
+                <ion-icon class="list--icon" name="checkmark-outline"></ion-icon
+                ><span>Delivery is free</span>
+              </li>
+              <li class="list--item">
+                <ion-icon class="list--icon" name="close-outline"></ion-icon
+                ><span>Get access to latest recipes</span>
+              </li>
+            </ul>
+            <div class="plan__sign--up">
+              <a
+                href="
+              "
+                class="btn btn--full"
+                >Buy complete Pack</a
+              >
+            </div>
+          </div>
         </div>
       </section>
     </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
